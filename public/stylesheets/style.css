@@ -1,0 +1,31 @@
+
+
+.pos{
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left: -600px;
+	margin-top:-335px;
+}
+
+
+
+.navbar-nav{
+	width:100%;
+}
+
+.menu{
+	text-align: center;
+    width:20%;
+}
+
+.shareing .row{
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.stepsimg{
+	width:100%;
+}
+
+
+

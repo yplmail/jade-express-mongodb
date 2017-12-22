@@ -1,0 +1,60 @@
+.container-right {
+    border: 1px solid #dcdcdc
+}
+
+.share-inner {
+    display: block;
+    border-top: 1px solid #dcdcdc;
+    color: #333;
+    min-height: 142px;
+}
+
+.share-inner:hover {
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.imgsize {
+    padding-top: 5%;
+    width: 100%;
+}
+
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (max-width: 768px) {
+  .container-left {
+		padding:0;
+		margin-top: 20px;
+	}
+
+}
+
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) and (max-width: 992px) {
+    .imgsize {
+        padding-top: 2%;
+        width: 100%;
+    }
+  	.container-left {
+		padding:0;
+		margin-top: 20px;
+	}    
+}
+
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) and (max-width: 1200px){
+    .imgsize {
+        padding-top: 14%;
+        width: 100%;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+    .imgsize {
+        padding-top: 4%;
+        width: 100%;
+    }
+}

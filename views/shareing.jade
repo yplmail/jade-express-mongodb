@@ -1,0 +1,239 @@
+extends layout
+block title 
+  title 技能分享
+block style  
+  link(rel='stylesheet', href='/stylesheets/shareing.css')
+block content
+  div.lotus-header
+    div.container
+      div.col-xs-12.thumbnail-outer
+        a.thumbnail
+          img(src="/images/personal_img.jpg")
+      div.row
+        div.col-xs-12.thumbnail-description
+          h4 青莲居士      
+  div.lotus-nav.navbar.navbar-default
+    div.container
+      div.navbar-header
+        button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+          span.sr-only
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
+        ul.nav.navbar-nav
+          li.menu.active
+            a(href="/lotus/shareing") 技能分享
+          li.menu
+            a(href="/lotus/step") 生活脚步
+          li.menu
+            a(href="/lotus/grass") 春草心声
+          li.menu
+            a(href="/lotus/tonglin") 桐林之城                                                                      
+          li.menu
+            a(href="/lotus/photo") 照片瀑布
+  div.lotus-container
+    div.container
+      div.row.container-inner
+         
+        div.container-right.col-md-9
+          .row
+            .col-md-4
+              h4(style="height:50px;line-height:50px;font-weight:700") 最新分享列表
+            .col-md-4
+              form.form-search
+                .input-append
+                  input.span2.search-query(type="text")
+                  button.btn(type='submit')
+            .col-md-4
+              div(style="margin:10px 0;height:50px;line-height:50px;text-align:right")
+                a.btn.btn-info(type='button' href="/lotus/create") 
+                  span.glyphicon.glyphicon-plus(style="margin-right:5px")
+                  新建分享
+          div.share-outer
+            a.row.share-inner
+              div.row
+                div.col-md-3
+                  img.imgsize(src="/images/mongodb.jpg")
+                div.col-md-9  
+                  div.row
+                    div.col-md-l2
+                      h4(style="height:30px;line-height:30px") 挑战全栈 MongDB免费视频教程 
+                    div.row
+                      div.col-md-l2
+                        p(style="font-size:12px;line-height:1.5em;color:#999") 上套课程讲了Koa2，挑战全栈就必须和数据库打交道，个人觉的作为一个前端开发人员，操作MongDB还是比较惬意的。因为它是一种NoSql数据库，不用写SQL语句。所以我们在Koa2的课程中间查了MongDB的课程，等会操作数据库后，我们再返
+                    div.row(style="margin-bottom:10px")
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")
+                        span 分享时间 ：2017-12-29
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 阅读数量   ：155  
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 评论数量   ：155 
+
+            a.row.share-inner
+              div.row
+                div.col-md-3
+                  img.imgsize(src="/images/mongodb.jpg")
+                div.col-md-9  
+                  div.row
+                    div.col-md-l2
+                      h4(style="height:30px;line-height:30px") 挑战全栈 MongDB免费视频教程 
+                    div.row
+                      div.col-md-l2
+                        p(style="font-size:12px;line-height:1.5em;color:#999") 上套课程讲了Koa2，挑战全栈就必须和数据库打交道，个人觉的作为一个前端开
+                    div.row(style="margin-bottom:10px")
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")
+                        span 分享时间 ：2017-12-29
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 阅读数量   ：155  
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 评论数量   ：155  
+
+            a.row.share-inner
+              div.row
+                div.col-md-3
+                  img.imgsize(src="/images/mongodb.jpg")
+                div.col-md-9  
+                  div.row
+                    div.col-md-l2
+                      h4(style="height:30px;line-height:30px") 挑战全栈 MongDB免费视频教程 
+                    div.row
+                      div.col-md-l2
+                        p(style="font-size:12px;line-height:1.5em;color:#999") 上套课程讲了Koa2，挑战全栈就必须和数据库打交道，个人觉的作为一个前端开发人员，操作MongDB还是比较惬意的。因为它是一种NoSql数据库，不用写SQL语句。所以我们在Koa2的课程中间查了MongDB的课程，等会操作数据库后，我们再返
+                    div.row(style="margin-bottom:10px")
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")
+                        span 分享时间 ：2017-12-29
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 阅读数量   ：155  
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 评论数量   ：155 
+            a.row.share-inner
+              div.row
+                div.col-md-3
+                  img.imgsize(src="/images/mongodb.jpg")
+                div.col-md-9  
+                  div.row
+                    div.col-md-l2
+                      h4(style="height:30px;line-height:30px") 挑战全栈 MongDB免费视频教程 
+                    div.row
+                      div.col-md-l2
+                        p(style="font-size:12px;line-height:1.5em;color:#999") 上套课程讲了Koa2，挑战全栈就必须和数据库打交道，个人觉的作为一个前端开发人员，操作MongDB还是比较惬意的。因为它是一种NoSql数据库，不用写SQL语句。所以我们在Koa2的课程中间查了MongDB的课程，等会操作数据库后，我们再返
+                    div.row(style="margin-bottom:10px")
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")
+                        span 分享时间 ：2017-12-29
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 阅读数量   ：155  
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 评论数量   ：155 
+
+            a.row.share-inner
+              div.row
+                div.col-md-3
+                  img.imgsize(src="/images/mongodb.jpg")
+                div.col-md-9  
+                  div.row
+                    div.col-md-l2
+                      h4(style="height:30px;line-height:30px") 挑战全栈 MongDB免费视频教程 
+                    div.row
+                      div.col-md-l2
+                        p(style="font-size:12px;line-height:1.5em;color:#999") 上套课程讲了Koa2，挑战全栈就必须和数据库打交道，个人觉的作为一个前端开
+                    div.row(style="margin-bottom:10px")
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")
+                        span 分享时间 ：2017-12-29
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 阅读数量   ：155  
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 评论数量   ：155  
+
+            a.row.share-inner
+              div.row
+                div.col-md-3
+                  img.imgsize(src="/images/mongodb.jpg")
+                div.col-md-9  
+                  div.row
+                    div.col-md-l2
+                      h4(style="height:30px;line-height:30px") 挑战全栈 MongDB免费视频教程 
+                    div.row
+                      div.col-md-l2
+                        p(style="font-size:12px;line-height:1.5em;color:#999") 上套课程讲了Koa2，挑战全栈就必须和数据库打交道，个人觉的作为一个前端开发人员，操作MongDB还是比较惬意的。因为它是一种NoSql数据库，不用写SQL语句。所以我们在Koa2的课程中间查了MongDB的课程，等会操作数据库后，我们再返
+                    div.row(style="margin-bottom:10px")
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")
+                        span 分享时间 ：2017-12-29
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 阅读数量   ：155  
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 评论数量   ：155 
+
+            a.row.share-inner
+              div.row
+                div.col-md-3
+                  img.imgsize(src="/images/mongodb.jpg")
+                div.col-md-9  
+                  div.row
+                    div.col-md-l2
+                      h4(style="height:30px;line-height:30px") 挑战全栈 MongDB免费视频教程 
+                    div.row
+                      div.col-md-l2
+                        p(style="font-size:12px;line-height:1.5em;color:#999") 上套课程讲了Koa2，挑战全栈就必须和数据库打交道，个人觉的作为一个前端开发人员，操作MongDB还是比较惬意的。因为它是一种NoSql数据库，不用写SQL语句。所以我们在Koa2的课程中间查了MongDB的课程，等会操作数据库后，我们再返
+                    div.row(style="margin-bottom:10px")
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")
+                        span 分享时间 ：2017-12-29
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 阅读数量   ：155  
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 评论数量   ：155 
+
+            a.row.share-inner
+              div.row
+                div.col-md-3
+                  img.imgsize(src="/images/mongodb.jpg")
+                div.col-md-9  
+                  div.row
+                    div.col-md-l2
+                      h4(style="height:30px;line-height:30px") 挑战全栈 MongDB免费视频教程 
+                    div.row
+                      div.col-md-l2
+                        p(style="font-size:12px;line-height:1.5em;color:#999") 上套课程讲了Koa2，挑战全栈就必须和数据库打交道，个人觉的作为一个前端开
+                    div.row(style="margin-bottom:10px")
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")
+                        span 分享时间 ：2017-12-29
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 阅读数量   ：155  
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 评论数量   ：155  
+
+            a.row.share-inner
+              div.row
+                div.col-md-3
+                  img.imgsize(src="/images/mongodb.jpg")
+                div.col-md-9  
+                  div.row
+                    div.col-md-l2
+                      h4(style="height:30px;line-height:30px") 挑战全栈 MongDB免费视频教程 
+                    div.row
+                      div.col-md-l2
+                        p(style="font-size:12px;line-height:1.5em;color:#999") 上套课程讲了Koa2，挑战全栈就必须和数据库打交道，个人觉的作为一个前端开发人员，操作MongDB还是比较惬意的。因为它是一种NoSql数据库，不用写SQL语句。所以我们在Koa2的课程中间查了MongDB的课程，等会操作数据库后，我们再返
+                    div.row(style="margin-bottom:10px")
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")
+                        span 分享时间 ：2017-12-29
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 阅读数量   ：155  
+                      div.col-md-4(style="margin-left:-15px;font-size:12px;color:#999")                   
+                        span 评论数量   ：155                         
+
+        div.container-left.col-md-3
+          div.panel.panel-default
+            div.panel-heading  网站相关公告
+            div.panel-body
+              div.row
+                div.col-xs-8.no-padding 关于网站说明
+                div.col-xs-4.no-padding(style="text-align:right") 12.19  
+              div.row
+                div.col-xs-8.no-padding 关于网站说明
+                div.col-xs-4.no-padding(style="text-align:right") 12.19  
+              div.row
+                div.col-xs-8.no-padding 关于网站说明
+                div.col-xs-4.no-padding(style="text-align:right") 12.19          
+  div.lotus-footer  
+
