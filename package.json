@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "start": "pm2  start ./bin/www –watch",
-    "pm2"  : "pm2  start ./bin/wwww",
-    "dev"  : "node --debug ./bin/www –watch",
-    "development" : "set DEBUG=expressmongo & npm start"
+    "pm2": "pm2  start ./bin/wwww",
+    "dev": "node --debug ./bin/www –watch",
+    "development": "set DEBUG=expressmongo & npm start"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -17,6 +17,7 @@
     "jade": "~1.11.0",
     "jquery": "^3.2.1",
     "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5"
+    "serve-favicon": "~2.4.5",
+    "summernote": "^0.8.8"
   }
 }

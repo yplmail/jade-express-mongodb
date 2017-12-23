@@ -2,7 +2,10 @@ extends ../layout
 block title 
   title 技能分享
 block style  
-  link(rel='stylesheet', href='/stylesheets/shareing.css')
+  link(rel='stylesheet', href='/stylesheets/create.css')
+  link(rel='stylesheet', href="/stylesheets/summernote.css")
+block script
+  script(type='text/javascript' src="/javascripts/summernote.js")
 block content
   div.lotus-header
     div.container
@@ -24,12 +27,47 @@ block content
       div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
         ul.nav.navbar-nav
           li.menu.active
-            a(href="/lotus/shareing") 技能分享
+            a(href="/skill/search") 技能分享
           li.menu
             a(href="/lotus/step") 生活脚步
           li.menu
             a(href="/lotus/grass") 春草心声
           li.menu
-            a(href="/lotus/tonglin") 桐林之城                                                                      
+            a(href="/lotus/tonglin") 桐林之城
           li.menu
             a(href="/lotus/photo") 照片瀑布
+  div.lotus-container
+    div.container
+      form.form-horizontal
+        .form-group
+          label.col-md-2.control-label 新建标题：
+          .col-md-4
+            input.form-control(type="text")
+        .form-group
+          label.col-md-2.control-label 新建类型：
+          .col-md-4
+            select.form-control
+              option 技能
+              option 公告
+        .form-group
+          label.col-md-2.control-label LOGO：
+          .col-md-4
+            .upload-outer
+            input.form-control(type='file')
+
+        .form-group
+          label.col-md-2.control-label 新建描述：
+          .col-md-5
+            textarea.form-control(rows="5")
+        .form-group
+          label.col-md-2.control-label 新建正文：
+          .col-md-10
+            div(id="summernote" style="border:1px solid #dcdcdc;height:500px")
+        .form-group
+          .col-md-offset-2.col-md-4
+            button.btn.btn-info(type='submit') 上传提交
+
+  script.
+    $(document).ready(function() {
+        $('#summernote').summernote();
+    });
