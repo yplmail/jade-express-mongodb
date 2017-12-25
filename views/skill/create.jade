@@ -6,6 +6,7 @@ block style
   link(rel='stylesheet', href="/stylesheets/summernote.css")
 block script
   script(type='text/javascript' src="/javascripts/summernote.js")
+  script(type='text/javascript' src="/javascripts/lang/summernote-zh-CN.js")
 block content
   div.lotus-header
     div.container
@@ -47,21 +48,21 @@ block content
           label.col-md-2.control-label 新建类型：
           .col-md-4
             select.form-control
-              option 技能
+              option 分享
               option 公告
         .form-group
           label.col-md-2.control-label LOGO：
           .col-md-4
-            .upload-outer
-            input.form-control(type='file')
-
+            .form-control.upload-outer
+              span.glyphicon.glyphicon-plus
+              input(type='file')
         .form-group
           label.col-md-2.control-label 新建描述：
           .col-md-5
             textarea.form-control(rows="5")
         .form-group
           label.col-md-2.control-label 新建正文：
-          .col-md-10
+          .col-md-10.summernote-container
             div(id="summernote" style="border:1px solid #dcdcdc;height:500px")
         .form-group
           .col-md-offset-2.col-md-4
@@ -69,5 +70,9 @@ block content
 
   script.
     $(document).ready(function() {
-        $('#summernote').summernote();
+        $('#summernote').summernote({
+          lang:'zh-CN',
+          minHeight: 500,             // set minimum height of editor
+          focus: true             
+        });
     });
