@@ -8,11 +8,46 @@ html
     meta(name='Description', content='一个用于分析的WEB前端博客')     
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/common.css')
+    link(rel='icon', href='/images/favicon.ico')        
     block title 
       title 青莲居士
     block style
     script(type='text/javascript', src='/javascripts/jquery.min.js')
     script(type='text/javascript', src='/javascripts/bootstrap.min.js')
     block script
-  body
-    block content
+  body      
+    header.lotus-header
+      div.container
+        div.col-xs-12.thumbnail-outer
+          a.thumbnail
+            img(src="/images/personal_img.jpg")
+        div.row
+          div.col-xs-12.thumbnail-description
+            h4 青莲居士              
+    nav.navbar.navbar-default
+      div.container
+        div.navbar-header
+          button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+            span.sr-only
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
+          ul.nav.navbar-nav
+            block share
+              li.menu
+                a(href="/share/index") 技能分享
+            block step  
+              li.menu
+                a(href="/step/index") 生活脚步
+            block grass  
+              li.menu
+                a(href="/grass/index") 春草心声
+            block tonglin  
+              li.menu
+                a(href="/home/index") 桐林之城                                                                      
+            block photo
+              li.menu
+                a(href="/photo/index") 照片瀑布
+    block content          

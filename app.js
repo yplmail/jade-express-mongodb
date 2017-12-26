@@ -5,10 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
-var lotus = require('./routes/lotus');
-var skill = require('./routes/skill');
+var share = require('./routes/share');
+var step  = require('./routes/step');
+var grass = require('./routes/grass');
+var home  = require('./routes/home');
+var photo = require('./routes/photo');
 
 var app = express();
 
@@ -24,10 +25,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/users', users);
-app.use('/lotus', lotus);
-app.use('/skill', skill)
+app.get('/', function(req, res, next){
+	res.redirect('/share/index');
+})
+app.use('/share', share);
+app.use('/step',  step);
+app.use('/grass', grass);
+app.use('/home',  home);
+app.use('/photo', photo);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
